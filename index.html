@@ -10,6 +10,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>AudioStudio</title>
   </head>
   <body>
@@ -124,64 +128,114 @@
       <section>
         <div class="artist_container">
           <h2 class="artist_title">What artists did on Echio</h2>
-          <ul class="option_list">
-            <li class="option_item">
-              <img
-                src="./images/artist1.jpg"
-                alt="studio option"
-                width="450"
-                height="600"
-                class="option_image"
-              />
-              <div class="desc_wrapper">
-                <h3 class="option_title">Workshops</h3>
-                <p class="option_descr">
-                  DJ Tennis & Joseph Ashworth gave us tips on how to find the
-                  core elements of a track.
-                </p>
+          <div class="swiper">
+            <div class="option_list swiper-wrapper">
+              <div class="option_item swiper-slide">
+                <img
+                  src="./images/artist1.jpg"
+                  alt="studio option"
+                  width="450"
+                  height="600"
+                  class="option_image"
+                />
+                <div class="desc_wrapper">
+                  <h3 class="option_title">Workshops</h3>
+                  <p class="option_descr">
+                    DJ Tennis & Joseph Ashworth gave us tips on how to find the
+                    core elements of a track.
+                  </p>
+                </div>
               </div>
-            </li>
-            <li class="option_item">
-              <img
-                src="./images/artist2.jpg"
-                alt="studio option"
-                width="450"
-                height="600"
-                class="option_image"
-              />
-              <div class="desc_wrapper">
-                <h3 class="option_title">Listening sessions</h3>
-                <p class="option_descr">
-                  Marina Trench dug through the records of a vinyl collector
-                  whose identity was kept secret.
-                </p>
+              <div class="option_item swiper-slide">
+                <img
+                  src="./images/artist2.jpg"
+                  alt="studio option"
+                  width="450"
+                  height="600"
+                  class="option_image"
+                />
+                <div class="desc_wrapper">
+                  <h3 class="option_title">Listening sessions</h3>
+                  <p class="option_descr">
+                    Marina Trench dug through the records of a vinyl collector
+                    whose identity was kept secret.
+                  </p>
+                </div>
               </div>
-            </li>
-            <li class="option_item">
-              <img
-                src="./images/artist3.jpg"
-                alt="studio option"
-                width="450"
-                height="600"
-                class="option_image"
-              />
-              <div class="desc_wrapper">
-                <h3 class="option_title">Masterclasses</h3>
-                <p class="option_descr">
-                  NSDOS did a masterclass on his Creative Coding approach of
-                  music composition.
-                </p>
+              <div class="option_item swiper-slide">
+                <img
+                  src="./images/artist3.jpg"
+                  alt="studio option"
+                  width="450"
+                  height="600"
+                  class="option_image"
+                />
+                <div class="desc_wrapper">
+                  <h3 class="option_title">Masterclasses</h3>
+                  <p class="option_descr">
+                    NSDOS did a masterclass on his Creative Coding approach of
+                    music composition.
+                  </p>
+                </div>
               </div>
-              desc_wrapper
-            </li>
-          </ul>
+              <div class="option_item swiper-slide">
+                <img
+                  src="./images/artist1.jpg"
+                  alt="studio option"
+                  width="450"
+                  height="600"
+                  class="option_image"
+                />
+                <div class="desc_wrapper">
+                  <h3 class="option_title">Workshops</h3>
+                  <p class="option_descr">
+                    DJ Tennis & Joseph Ashworth gave us tips on how to find the
+                    core elements of a track.
+                  </p>
+                </div>
+              </div>
+              <div class="option_item swiper-slide">
+                <img
+                  src="./images/artist2.jpg"
+                  alt="studio option"
+                  width="450"
+                  height="600"
+                  class="option_image"
+                />
+                <div class="desc_wrapper">
+                  <h3 class="option_title">Listening sessions</h3>
+                  <p class="option_descr">
+                    Marina Trench dug through the records of a vinyl collector
+                    whose identity was kept secret.
+                  </p>
+                </div>
+              </div>
+              <div class="option_item swiper-slide">
+                <img
+                  src="./images/artist3.jpg"
+                  alt="studio option"
+                  width="450"
+                  height="600"
+                  class="option_image"
+                />
+                <div class="desc_wrapper">
+                  <h3 class="option_title">Masterclasses</h3>
+                  <p class="option_descr">
+                    NSDOS did a masterclass on his Creative Coding approach of
+                    music composition.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="button_wrapper">
-            <button type="button" class="option_button">
+            <button type="button" class="prev_button option_button">
               <svg width="24" height="24">
                 <use href="./images/sprite.svg#icon-arrow-left"></use>
               </svg>
             </button>
-            <button type="button" class="option_button">
+            <button type="button" class="next_button option_button">
               <svg width="24" height="24">
                 <use href="./images/sprite.svg#icon-arrow-right"></use>
               </svg>
@@ -283,5 +337,7 @@
       <h2 class="footer_title">Join Echio for free</h2>
       <button type="button" class="footer_btn">Sign Up Now</button>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
